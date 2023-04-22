@@ -1,0 +1,43 @@
+$dark-pink: #ED70B2;
+$light-black: #363636;
+.header-container{
+    color: $light-black;
+    padding: 14px 10%;
+    transition: all 0.2s ease;
+    img{
+        min-width: 60px;
+    }
+    .header-text{
+        position: relative;
+        transition: all .25s ease;
+        font-weight: 500;
+        cursor: pointer;
+        &::before{
+            content: '';
+            width: 100%;
+            position: absolute;
+            height: 4px;
+            bottom: -8px;
+            background-color: $dark-pink;
+            transform: scaleX(0);
+            transition: transform 0.25s ease;
+            border-radius: 2px;
+            
+        }
+        &:hover::before{
+            transform: scaleX(1);
+        }
+        &:hover{
+            color: $dark-pink;
+        }
+    }
+    .nav-icon box-icon{
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 750px) {
+    .header-container{
+        padding: 20px 5%;
+    }
+}
