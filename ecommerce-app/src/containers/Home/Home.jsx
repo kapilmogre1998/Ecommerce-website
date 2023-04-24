@@ -1,12 +1,15 @@
 import Header from "../../components/Home/Header";
 import Section from "../../components/Home/Section";
+import './Home.scss'
 
-const Home = () => {
+const Home = (props) => {
+  const {headerSticky} = props;
+
     return (
-        <>
-          <Header/>
+        <div className="home-container" >
+          <Header headerSticky={headerSticky} />
           <Section/>
-        </>
+        </div>
     )
 }
 

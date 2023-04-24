@@ -4,6 +4,6 @@
   box-sizing: border-box;
 }
 .app-container{
-  height: 100vh;
-  background-color: rgba(221, 215, 215, 0.23);
+  /* height: 100vh;
+  background-color: rgba(221, 215, 215, 0.23); */
 }

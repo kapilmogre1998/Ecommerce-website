@@ -1,10 +1,12 @@
 import './Header.scss'
 
-const Header = () => {
+const Header = (props) => {
+    const {headerSticky} = props;
+    console.log({headerSticky});
     return (
-        <header className="flex items-center justify-between header-container" >
+        <header className={`flex items-center justify-between header-container ${headerSticky ? 'sticky shadow-md' : ''}`} >
             <div>
-                <img className='rounded-md' width={60} height={60} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEkgUW9LPedoKEry3vIMvHYHBV3-OHl18C83EykiTwVA&usqp=CAU&ec=48665701" alt="" />
+                <img className='rounded-md' width={80} height={80} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_fUC8vkLHUkBie0556QT_LhoNJNrMKdIn55U-KK1xOw&usqp=CAU&ec=48665701" alt="" />
             </div>
             <div className="flex gap-8" >
                 <div className='header-text' >Home</div>
