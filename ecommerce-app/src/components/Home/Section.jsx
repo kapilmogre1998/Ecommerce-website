@@ -6,7 +6,7 @@ const Section = () => {
           <div className='main-text' >
             <div className='title1' >Summer Collection</div>
             <div className='title2' >New Summer <br/> Collection 2023 </div>
-            <div className='title3' >Shop Now <box-icon name='right-arrow-alt'></box-icon></div>
+            <a className='title3' >Shop Now <i class='bx bxs-right-arrow-alt bx-sm' ></i></a>
           </div>
         </div>
     )

@@ -16,7 +16,7 @@ $black: #000000;
     .main-text{
         .title1{
             color: $red;
-            font-size: $h6-font-size;
+            font-size: $h4-font-size;
             margin-bottom: 0px;
             text-transform: capitalize;
         }
@@ -31,7 +31,7 @@ $black: #000000;
             border: 2px solid black;
             width: fit-content;
             justify-content: center;
-            padding: 4px 8px;
+            padding: 4px 8px 4px 10px;
             margin-top: 12px;
             // background: linear-gradient(to right, black 50%, white 50%);
             // background-size: 200% 100%;
