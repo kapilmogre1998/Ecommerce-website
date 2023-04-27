@@ -36,9 +36,11 @@ $white: #fff;
         cursor: pointer;
     }
 }
-.sticky{
-    position: sticky;
+.fixed{
+    position: fixed;
     top: 0px;
+    right: 0px;
+    left: 0px;
     background-color: $white;
 }
 
