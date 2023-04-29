@@ -1,3 +1,4 @@
+import { PRODUCT_LIST } from '../../containers/Home/constant';
 import './Products.scss';
 
 const Products = () => {
@@ -6,16 +7,16 @@ const Products = () => {
             <div className="title" >Our Trending <span>Products</span></div>
             <div className='product-detail-container' >
                 {
-                    new Array(4).fill(0).map(() => (
+                    PRODUCT_LIST.map(({imgPath, productName, rating, strikeThroughPrice, discountedPrice}) => (
                         <div className='product' >
-                            <img src="src/assets/Prod1.jpg" alt="img" />
+                            <img src={imgPath} alt="img" />
                             <div className='product-text' >
-                                <div>{new Array(4).fill(0).map(() => <i class='bx bxs-star'></i>)}</div>
-                                <div className='prod-title' >Beautiful Dress</div>
+                                <div>{new Array(rating).fill(0).map(() => <i class='bx bxs-star'></i>)}</div>
+                                <div className='prod-title' >{productName}</div>
                                 <div className='price' >
                                     ₹
-                                    <div className='price-linethrough' >3999</div>
-                                    <div>2999</div>
+                                    <div className='price-linethrough' >{strikeThroughPrice}</div>
+                                    <div>{discountedPrice}</div>
                                 </div>
                             </div>
                         </div>
