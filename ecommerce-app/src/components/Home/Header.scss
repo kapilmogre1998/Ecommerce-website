@@ -1,6 +1,4 @@
-$dark-pink: #ED70B2;
-$light-black: #363636;
-$white: #fff;
+@import '../../styles/variables.scss';
 
 .header-container{
     color: $light-black;
@@ -36,19 +34,43 @@ $white: #fff;
         cursor: pointer;
     }
 }
+.side-menu{
+    transform: translateX(100%);
+    // transform: scale(0);
+    transition: all 2s;
+}
 .fixed{
     position: sticky;
     top: 0px;
     right: 0px;
     left: 0px;
     background-color: $white;
-    z-index: 1000;
+    z-index: 10;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 750px) {
     .header-container{
         .menu{
             display: none;
+        }
+    }
+    .side-menu{
+        // margin: 0% 10%;
+        position: absolute;
+        right: 0px;
+        background-color: $white;
+        padding: 6% 30%;
+        transform: translateX(0%);
+        font-size: $h5-font-size;
+        font-weight: $font-semi-bold-500;
+        ul{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.5rem;
+            li{
+                cursor: pointer;
+            }
         }
     }
 }

@@ -7,11 +7,11 @@ const Products = () => {
             <div className="title" >Our Trending <span>Products</span></div>
             <div className='product-detail-container' >
                 {
-                    PRODUCT_LIST.map(({imgPath, productName, rating, strikeThroughPrice, discountedPrice}) => (
-                        <div className='product' >
+                    PRODUCT_LIST.map(({imgPath, productName, rating, strikeThroughPrice, discountedPrice}, id) => (
+                        <div key={id} className='product' >
                             <img src={imgPath} alt="img" />
                             <div className='product-text' >
-                                <div>{new Array(rating).fill(0).map(() => <i class='bx bxs-star'></i>)}</div>
+                                <div>{new Array(rating).fill(0).map((_,id) => <i key={id} className='bx bxs-star'></i>)}</div>
                                 <div className='prod-title' >{productName}</div>
                                 <div className='price' >
                                     ₹
