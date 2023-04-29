@@ -7,7 +7,7 @@ const Header = (props) => {
             <div>
                 <img className='rounded-md' width={80} height={80} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_fUC8vkLHUkBie0556QT_LhoNJNrMKdIn55U-KK1xOw&usqp=CAU&ec=48665701" alt="" />
             </div>
-            <div className="flex gap-8" >
+            <div className="flex gap-8 text-lg menu" >
                 <div className='header-text' >Home</div>
                 <div className='header-text' >Shop</div>
                 <div className='header-text' >Product</div>

@@ -37,15 +37,18 @@ $white: #fff;
     }
 }
 .fixed{
-    position: fixed;
+    position: sticky;
     top: 0px;
     right: 0px;
     left: 0px;
     background-color: $white;
+    z-index: 1000;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 800px) {
     .header-container{
-        padding: 20px 5%;
+        .menu{
+            display: none;
+        }
     }
 }
