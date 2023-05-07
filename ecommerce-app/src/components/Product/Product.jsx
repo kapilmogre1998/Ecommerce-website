@@ -1,9 +1,9 @@
 import { PRODUCT_LIST } from '../../containers/Home/constant';
-import './Products.scss';
+import './Product.scss';
 
-const Products = () => {
+const Product = () => {
     return (
-        <div className='products-container' >
+        <div className='product-container' >
             <div className="title" >Our Trending <span>Products</span></div>
             <div className='product-detail-container' >
                 {
@@ -27,4 +27,4 @@ const Products = () => {
     )
 }
 
-export default Products;
+export default Product;
