@@ -1,0 +1,24 @@
+@import '../../styles/variables.scss';
+
+.review-container{
+    padding: 2% 10%;
+    .title{
+        font-size: $h4-font-size;
+    }
+    .reviews{
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        .customer-review{
+            background: rgb(240, 239, 237);
+            .customer-img{
+                width: 120px;
+                height: 120px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1160px) {
+    .customer-review:nth-child(3){
+        grid-column: 1 / -1;
+    }
+}
