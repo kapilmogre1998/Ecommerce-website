@@ -1,24 +1,35 @@
 @import '../../styles/variables.scss';
 
-.review-container{
+.customer-container{
     padding: 2% 10%;
-    .title{
-        font-size: $h4-font-size;
+}
+.title{
+    font-size: $h4-font-size;
+}
+.customer-reviews{
+    justify-content: center;
+    .review-container{
+        flex: 1 1 auto;
     }
-    .reviews{
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        .customer-review{
-            background: rgb(240, 239, 237);
-            .customer-img{
-                width: 120px;
-                height: 120px;
-            }
+}
+
+@media only screen and (max-width: 900px) {
+    .customer-reviews{
+        flex-wrap: wrap;
+        .review-container{
+            flex: 1 1 12rem;
         }
     }
 }
 
-@media (max-width: 1160px) {
-    .customer-review:nth-child(3){
-        grid-column: 1 / -1;
+@media only screen and (max-width: 780px) {
+    .customer-reviews > :nth-child(3){
+        flex: 0 0 50%;
+    }
+}
+
+@media only screen and (max-width:531px) {
+    .customer-reviews{
+        flex: 0 0 100%;
     }
 }
