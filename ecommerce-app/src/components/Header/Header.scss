@@ -40,11 +40,11 @@
 
 .side-menu{
     transition: all 0.7s ease;
-    width: 27rem;
+    width: 24rem;
     position: fixed;
     right: 0px;
     background-color: $white;
-    padding: 6% 30%;
+    padding: 6% 0%;
     transform: translateX(100%);
     font-size: $h5-font-size;
     font-weight: $font-semi-bold-500;

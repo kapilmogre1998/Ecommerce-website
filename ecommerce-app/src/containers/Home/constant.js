@@ -56,3 +56,18 @@ export const PRODUCT_LIST = [
         'discountedPrice': '999'
     }
 ]
+
+export const CUSTOMER_REVIEW = [
+    {
+        'imgPath': 'src/assets/team-1.jpg',
+        'text': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit corrupti sit inventore nam soluta ab, odio totam ipsam quaerat? Quam architecto eveniet excepturi exercitationem iste dolorem nisi et accusamus molestiae.'
+    },
+    {
+        'imgPath': 'src/assets/team-2.jpg',
+        'text': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit corrupti sit inventore nam soluta ab, odio totam ipsam quaerat? Quam architecto eveniet excepturi exercitationem iste dolorem nisi et accusamus molestiae.'
+    },
+    {
+        'imgPath': 'src/assets/team-3.jpg',
+        'text': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit corrupti sit inventore nam soluta ab'
+    }
+]

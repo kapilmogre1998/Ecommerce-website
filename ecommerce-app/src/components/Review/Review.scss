@@ -9,11 +9,14 @@
 .customer-reviews{
     justify-content: center;
     .review-container{
-        flex: 1 1 auto;
+        flex: 1 1 0;
+    }
+    img{
+        height: 18rem;
     }
 }
 
-@media only screen and (max-width: 900px) {
+@media (max-width: 56rem) {
     .customer-reviews{
         flex-wrap: wrap;
         .review-container{
@@ -22,14 +25,16 @@
     }
 }
 
-@media only screen and (max-width: 780px) {
+@media (max-width: 49rem) {
     .customer-reviews > :nth-child(3){
         flex: 0 0 50%;
     }
 }
 
-@media only screen and (max-width:531px) {
+@media (max-width: 34rem) {
     .customer-reviews{
-        flex: 0 0 100%;
+        .review-container{
+            flex: 0 0 100%;
+        }
     }
 }
